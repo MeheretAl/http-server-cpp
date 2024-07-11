@@ -26,7 +26,7 @@ public:
 
     void closeServer();
 
-    void handleError(string msg);
+    void handleError(const std::string &msg);
 
 private:
     int serverSocket;
