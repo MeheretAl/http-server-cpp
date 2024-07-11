@@ -8,11 +8,11 @@
 
 using namespace std;
 
-class simpleServer
+class server
 {
 public:
-    simpleServer();
-    ~simpleServer();
+    server();
+    ~server();
 
     void init(int port);
 
@@ -26,7 +26,7 @@ public:
 
     void closeServer();
 
-    void handleErrors(string &msg);
+    void handleError(string msg);
 
 private:
     int serverSocket;
